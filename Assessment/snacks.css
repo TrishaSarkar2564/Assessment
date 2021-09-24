@@ -1,0 +1,87 @@
+body {
+    background-color: rgb(255, 239, 239);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0%;
+}
+
+table {
+    table-layout: fixed ;
+    width: 100% ;
+  }
+  td {
+    width: 25% ;
+  }
+
+.wrapper {
+    display :grid;
+    grid-template-columns : 80% 20%;
+    grid-template-rows: 16% 5% 4% 72% 3%;
+    grid-template-areas: "heading heading"
+                        "index index"
+                        "bodytitle recent"
+                        "body recent"
+                        "footer footer";
+
+}
+
+.header { 
+    background-image: url('finalbackground.jpg ');
+    font-size: 65px;
+    font-family: 'Stick No Bills', sans-serif;
+    color: rgb(0, 0, 0);
+    grid-area: heading;   
+    text-align: center; 
+}
+
+.menu {
+    background-color: rgb(255, 239, 239);
+    text-decoration: none;
+    text-decoration-line: none;
+    height: 69px;
+    list-style: none;
+    grid-area: index;
+    line-height: 69px;
+    text-align: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 25px;
+    font-family: 'Space Mono', monospace;
+    
+}
+
+.bodytitle {
+    background-color: rgb(0, 71, 99);
+    font-family: 'Space Grotesk', sans-serif;
+    grid-area: bodytitle;
+    text-align: center;
+}
+.Body {
+    background-color: rgb(255, 239, 239);
+    grid-area: body;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 16px;
+    margin-top: 25px;
+ margin-bottom: 25px;
+ margin-left: 25px;
+ margin-right: 25px;
+}
+
+  
+.recent {
+    background-color: rgb(65, 160, 152);
+    border: rgb(255, 239, 239);
+    border-style: double;
+    border-width: 10px;
+    grid-area: recent;
+    text-align: center;
+    padding: 20px;
+    font-family: 'Space Grotesk', sans-serif;
+}
+
+.footer {
+    background-color: rgb(0, 0, 0);
+    grid-area: footer;
+    text-align: center;
+    color: azure;
+}
